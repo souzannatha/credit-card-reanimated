@@ -1,16 +1,20 @@
 import { StyleSheet } from "react-native";
+import { blue } from "react-native-reanimated/lib/typescript/reanimated2/Colors";
 
 export const styles = StyleSheet.create({
-  cardContainer: {
+  front: {
+    backfaceVisibility: "hidden",
+    position: "absolute",
+  },
+  back: {
+    backfaceVisibility: "hidden",
+  },
+  card: {
     width: 354,
     height: 230,
     borderRadius: 15,
     padding: 16,
     margin: 20,
-  },
-  flag: {
-    flexDirection: "row",
-    gap: 5,
   },
   circles: {
     width: 54,
@@ -21,6 +25,10 @@ export const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "500",
     marginLeft: 8,
+  },
+  flag: {
+    flexDirection: "row",
+    gap: 5,
   },
   name: {
     alignSelf: "center",

@@ -10,7 +10,7 @@ export function ProfilePicture() {
           source={require("../../assets/images/photo.png")}
         />
       </View>
-      <Text style={styles.welcome}>Bem Vindo, Nathã</Text>
+      <Text style={styles.welcome}>Bem Vindo (a)</Text>
     </View>
   );
 }
