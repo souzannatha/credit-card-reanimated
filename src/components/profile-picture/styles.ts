@@ -1,9 +1,11 @@
 import { StyleSheet } from "react-native";
+import theme from "@/styles/themes/light";
 
 export const styles = StyleSheet.create({
   container: {
     alignItems: "center",
     marginTop: 60,
+    fontFamily: theme.fonts.sm,
   },
   imageBorder: {
     borderWidth: 2,
@@ -18,7 +20,7 @@ export const styles = StyleSheet.create({
   welcome: {
     marginTop: 30,
     fontSize: 24,
-    fontWeight: "400",
+    fontFamily: theme.fonts.bg,
     color: "#fff",
   },
 });

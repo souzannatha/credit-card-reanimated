@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { blue } from "react-native-reanimated/lib/typescript/reanimated2/Colors";
+import theme from "@/styles/themes/light";
 
 export const styles = StyleSheet.create({
   front: {
@@ -23,6 +24,7 @@ export const styles = StyleSheet.create({
   mycard: {
     alignSelf: "center",
     fontSize: 14,
+    fontFamily: theme.fonts.md,
     fontWeight: "500",
     marginLeft: 8,
   },
@@ -34,7 +36,7 @@ export const styles = StyleSheet.create({
     alignSelf: "center",
     marginTop: 35,
     fontSize: 32,
-    fontWeight: "bold",
+    fontFamily: theme.fonts.bg,
   },
   cardDetails: {
     gap: 8,
@@ -42,6 +44,7 @@ export const styles = StyleSheet.create({
   },
   textDetails: {
     fontSize: 20,
+    fontFamily: theme.fonts.md,
     fontWeight: "500",
     marginBottom: 8,
   },

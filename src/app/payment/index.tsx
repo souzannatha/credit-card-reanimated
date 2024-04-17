@@ -43,9 +43,7 @@ export function Payment() {
           code,
         }}
       />
-      <TouchableOpacity onPress={handleFlipCard}>
-        <Text>Inverter</Text>
-      </TouchableOpacity>
+
       <View style={styles.form}>
         <Input
           style={styles.inputItems}
@@ -57,7 +55,7 @@ export function Payment() {
         <Input
           style={styles.inputItems}
           placeholder="Número do cartão"
-          keyboardType="numeric"
+          keyboardType="numbers-and-punctuation"
           placeholderTextColor="white"
           maxLength={16}
           onChangeText={setNumber}
@@ -67,7 +65,7 @@ export function Payment() {
           <Input
             style={styles.inputInlineItems}
             placeholder="CVV"
-            keyboardType="numeric"
+            keyboardType="numbers-and-punctuation"
             placeholderTextColor="white"
             maxLength={3}
             onChangeText={setCode}
@@ -76,7 +74,7 @@ export function Payment() {
           <Input
             style={styles.inputInlineItems}
             placeholder="01/02"
-            keyboardType="numeric"
+            keyboardType="numbers-and-punctuation"
             placeholderTextColor="white"
             onChangeText={setDate}
             onFocus={showBackCard}
